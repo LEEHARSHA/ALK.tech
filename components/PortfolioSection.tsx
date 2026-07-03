@@ -4,19 +4,20 @@ import { motion } from 'framer-motion';
 
 const portfolio = [
   {
-    title: 'Nova Commerce',
-    technology: 'Next.js · Tailwind · Stripe',
-    description: 'AI-powered commerce experience designed for premium retail brands.',
+    title: 'SehatSetu',
+    subtitle: 'AI Health Assistant',
+    description:
+      'An intelligent AI-powered healthcare assistant that helps users understand symptoms, receive health guidance, manage wellness information, and access smart healthcare support through an intuitive conversational interface.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'AI', 'Node.js', 'MongoDB'],
+    category: 'AI Healthcare',
   },
   {
-    title: 'Lumen Health',
-    technology: 'React · Node.js · AWS',
-    description: 'A secure digital health platform with real-time analytics and automation.',
-  },
-  {
-    title: 'Atlas Finance',
-    technology: 'TypeScript · MongoDB · Kubernetes',
-    description: 'Scalable financial tooling built for enterprise performance and trust.',
+    title: 'Fitness Species',
+    subtitle: 'Smart Fitness Ecosystem',
+    description:
+      'A complete fitness platform connecting trainers and clients with workout planning, nutrition tracking, AI assistance, progress monitoring, and personalized fitness management.',
+    technologies: ['React Native', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'AI'],
+    category: 'Fitness Technology',
   },
 ];
 
@@ -32,7 +33,7 @@ export default function PortfolioSection() {
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-8 lg:grid-cols-2">
           {portfolio.map((item, index) => (
             <motion.div
               key={item.title}
@@ -46,13 +47,20 @@ export default function PortfolioSection() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(108,99,255,0.15),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(0,245,212,0.12),_transparent_28%)]" />
               <div className="relative z-10 flex h-full flex-col justify-between gap-6">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.35em] text-secondary">Project</p>
+                  <p className="text-xs uppercase tracking-[0.35em] text-secondary">{item.category}</p>
                   <h3 className="mt-4 text-2xl font-semibold text-white">{item.title}</h3>
+                  <p className="mt-2 text-sm uppercase tracking-[0.3em] text-secondary">{item.subtitle}</p>
                   <p className="mt-4 text-slate-300">{item.description}</p>
                 </div>
-                <div className="mt-6 flex items-center justify-between gap-4 text-sm text-slate-400">
-                  <span className="rounded-full bg-white/5 px-4 py-2">{item.technology}</span>
-                  <button className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-white transition hover:border-secondary hover:text-secondary">
+                <div className="mt-6">
+                  <div className="flex flex-wrap gap-2">
+                    {item.technologies.map((technology) => (
+                      <span key={technology} className="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-400">
+                        {technology}
+                      </span>
+                    ))}
+                  </div>
+                  <button className="mt-6 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-white transition hover:border-secondary hover:text-secondary">
                     View project
                   </button>
                 </div>

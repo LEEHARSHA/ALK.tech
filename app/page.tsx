@@ -5,7 +5,6 @@ import WhyChooseSection from '@/components/WhyChooseSection';
 import ProcessSection from '@/components/ProcessSection';
 import PortfolioSection from '@/components/PortfolioSection';
 import TechStackSection from '@/components/TechStackSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQSection from '@/components/FAQSection';
 import CTASection from '@/components/CTASection';
 import ContactSection from '@/components/ContactSection';
@@ -22,7 +21,6 @@ export default function HomePage() {
       <ProcessSection />
       <PortfolioSection />
       <TechStackSection />
-      <TestimonialsSection />
       <FAQSection />
       <CTASection />
       <ContactSection />
