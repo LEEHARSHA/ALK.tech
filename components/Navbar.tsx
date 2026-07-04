@@ -29,7 +29,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4 sm:px-10">
         <a href="#home" className="text-lg font-semibold tracking-[0.1em] text-white">
-          ALK Solutions
+          Apex LK.Tech
         </a>
         <nav className="hidden items-center gap-8 lg:flex">
           {items.map((item) => (

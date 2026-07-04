@@ -21,7 +21,7 @@ export default function Footer() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <p className="mb-4 text-xs uppercase tracking-[0.35em] text-secondary">ALK Solutions</p>
+            <p className="mb-4 text-xs uppercase tracking-[0.35em] text-secondary">Apex LK.Tech</p>
             <h2 className="text-3xl font-semibold text-white sm:text-4xl">Experience premium engineering.</h2>
             <p className="mt-5 max-w-2xl leading-7 text-slate-400">
               Immersive products, scalable systems, and bespoke digital experiences for ambitious teams that demand exceptional delivery.
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-6 text-center text-xs text-slate-500 sm:flex sm:items-center sm:justify-between">
-          <p>© 2026 ALK Solutions. Crafted for modern digital transformation.</p>
+          <p>© 2026 Apex LK.Tech. Crafted for modern digital transformation.</p>
           <div className="mt-4 flex flex-wrap justify-center gap-4 sm:mt-0">
             <a href="/privacy" className="transition hover:text-white">Privacy Policy</a>
             <a href="/terms" className="transition hover:text-white">Terms</a>

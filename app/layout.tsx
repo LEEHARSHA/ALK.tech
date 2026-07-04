@@ -4,29 +4,34 @@ import Providers from '@/components/Providers';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'ALK Solutions | Building Intelligent Digital Experiences',
-  description: 'Premium software engineering for AI-first brands. Intelligent products, scalable systems, and immersive digital experiences.',
+  title: 'Apex LK.Tech | AI, Website & App Development Company',
+  description:
+    'Apex LK.Tech builds premium websites, Android applications, AI chatbots, UI/UX design, SEO services, business automation solutions, and custom software for startups and businesses.',
   openGraph: {
-    title: 'ALK Solutions | Building Intelligent Digital Experiences',
-    description: 'Premium software engineering for AI-first brands. Intelligent products, scalable systems, and immersive digital experiences.',
-    siteName: 'ALK Solutions',
+    title: 'Apex LK.Tech | AI, Website & App Development Company',
+    description:
+      'Apex LK.Tech creates premium websites, Android apps, AI chatbots, UI/UX design, SEO, automation and custom software.',
+    siteName: 'Apex LK.Tech',
     type: 'website',
-    url: 'https://alk-tech.com',
+    url: 'https://www.alk.co.in/',
     images: [
       {
-        url: 'https://alk-tech.com/og-image.png',
+        url: 'https://www.alk.co.in/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'ALK Solutions',
+        alt: 'Apex LK.Tech',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ALK Solutions | Building Intelligent Digital Experiences',
-    description: 'Premium software engineering for AI-first brands.',
+    title: 'Apex LK.Tech | AI, Website & App Development Company',
+    description: 'Premium Website Development, Android Apps, AI Chatbots, SEO, UI/UX Design and Business Automation.',
   },
-  metadataBase: new URL('https://alk-tech.com'),
+  metadataBase: new URL('https://www.alk.co.in'),
+  alternates: {
+    canonical: 'https://www.alk.co.in/',
+  },
   robots: {
     index: true,
     follow: true,
