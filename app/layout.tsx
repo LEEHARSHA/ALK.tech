@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   title: 'Apex LK.Tech | AI, Website & App Development Company',
   description:
     'Apex LK.Tech builds premium websites, Android applications, AI chatbots, UI/UX design, SEO services, business automation solutions, and custom software for startups and businesses.',
+  icons: {
+    icon: [
+      {
+        url: '/favicon.png',
+        type: 'image/png',
+      },
+    ],
+    apple: {
+      url: '/apple-touch-icon.png',
+      type: 'image/png',
+    },
+  },
+  manifest: '/manifest.json',
   openGraph: {
     title: 'Apex LK.Tech | AI, Website & App Development Company',
     description:
